@@ -19,5 +19,24 @@
       <description>&lt;p&gt;En esta publicación quiero expresar mi interpretación de esta lectura escrita por alejandro Aravena. Abarca temas relacionados a la pandemia que estamos viviendo, el estallido social y la crisis de hambruna.&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Arduino Ejercicio Piano</title>
+      <link>/portfolio/work7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/work7/</guid>
+      <description>&lt;p&gt;Este es un ejercicio básico de Arduino UNO para probar sensores y códigos. En esta ocasión utilizo una interfaz virtual y doy indicaciones de la manera más básica para entender un código. Vamos a utilizar un módulo Digital.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>El rol de los videojuegos en la pandemia 2020</title>
+      <link>/portfolio/work8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/work8/</guid>
+      <description>&lt;p&gt;El Gaming ha sido algo bastante común esta cuarentena, porque nos mantiene en distracción con entretenimiento y además permite conexión con las personas que solíamos ver presencialmente.
+Esta publicación habla de cómo podemos abordar la oportunidad de crear proyectos de entretenimiento mediante fabricación con basura y aplicación electrónica llevada a videojuegos.&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>
