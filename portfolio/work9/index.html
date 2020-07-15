@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Arduino Ejercicio 1 Piano</title>
+<title>Arduino Ejercicio 2 Botón RGB y Botón Soft</title>
 <meta name="description" content="Este es mi portafolio digital en el cual encontrarás trabajos de diversas áreas en el diseño.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all,follow">
@@ -98,91 +98,35 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="content-column-content">
-         <h1>Arduino Ejercicio 1 Piano</h1>
-         <p>Este es un ejercicio básico de Arduino UNO para probar sensores y códigos. En esta ocasión utilizo una interfaz virtual y doy indicaciones de la manera más básica para entender un código. Vamos a utilizar un módulo Digital.</p>
-<p><img src="/img/banner2.jpg" alt="banner"></p>
-<h6 id="piano-buzzer">Piano Buzzer</h6>
-<p>El piano buzzer es un buen ejercicio para que podamos entender el funcionamiento básico de Arduino. En general, todas las cosas funcionan con la misma lógica; definir los puertos que vamos a utilizar (pins), un &ldquo;<strong>void setup</strong>&rdquo; que es para declarar qué cosas funcionarán como input y output, y un &ldquo;<strong>void loop</strong>&rdquo; que va a ejecutar lo que le estemos pidiendo mediante programación.</p>
+         <h1>Arduino Ejercicio 2 Botón RGB y Botón Soft</h1>
+         <p>En esta ocasión realizamos un código con un Led RGB en el que podemos combinar los botones de diferente forma para generar colores distintos, y después fabricamos nuestro propio botón con materiales de la casa y lo llevamos a un output diferente, un altavoz con una melodía.</p>
+<h6 id="proceso-botón-soft-aún-me-falta-subir-los-gif-c">Proceso botón soft [aún me falta subir los gif :c]</h6>
+<p>Para crear nuestro botón reutilizamos una funda de audífono para separar los 2 contactos que activarán el código con la melodía del opening de Evangelion. Esta melodía fue escrita en código para arduino, por un ex compañero que me lo entregó y yo le incluí este input nuevo.</p>
+<p><img src="/img/softbutton0.jpg" alt="img"></p>
+<p><img src="/img/softbutton1.jpg" alt="img"></p>
+<p><img src="/img/softbutton2.jpg" alt="img"></p>
+<p><img src="/img/softbutton3.jpg" alt="img"></p>
+<p><img src="/img/softbutton4.jpg" alt="img"></p>
+<p><img src="/img/softbutton5.jpg" alt="img"></p>
+<p><img src="/img/softbutton6.jpg" alt="img"></p>
 <div>
-    <iframe width="840" height="453" src="https://www.tinkercad.com/embed/hrHecfXtvCa?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    <iframe width="840" height="453" src="https://www.tinkercad.com/embed/d52C6hwjIbp?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> 
 </div>
-<h6 id="código">Código</h6>
-<pre><code>//Primero seteamos los pin que utilizaremos para conectar nuestros sensores
-//El número antes del semicolon &quot;;&quot; corresponde al número de pin en nuestro módulo digital de arduino.
+<hr>
+<div>
+    <iframe width="840" height="453" src="https://www.tinkercad.com/embed/b8IukT1QqNM?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<hr>
 
-int but1 = 2;
-int but2 = 3;
-int but3 = 4;
-int but4 = 5;
-int but5 = 6;
-int but6 = 7;
-int but7 = 8;
-int but8 = 9;
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/d2sMOdmgtaQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
 
-int buzzer = 13;
+<hr>
 
-void setup()
-{
-  //Declaramos los pin de los botones como input.
-  pinMode(but1,INPUT);
-  pinMode(but2,INPUT);
-  pinMode(but3,INPUT);
-  pinMode(but4,INPUT);
-  pinMode(but5,INPUT);
-  pinMode(but6,INPUT);
-  pinMode(but7,INPUT);
-  pinMode(but8,INPUT);
-  
-  //El buzzer recibirá la señal, por ende lo declaramos como output.
-  pinMode(buzzer,OUTPUT);
-  
-}
-
-void loop()
-{
-  //Declaramos el valor de los sensores para que suenen con notas distintas.
-  //Como la señal que estamos utilizando es digital, varía solamente en 0 y 1.
-  //1 es para que cuando hagamos contacto, suene. 0 Hará lo inverso.
-  int b1 = digitalRead(but1);
-  int b2 = digitalRead(but2);
-  int b3 = digitalRead(but3);
-  int b4 = digitalRead(but4);
-  int b5 = digitalRead(but5);
-  int b6 = digitalRead(but6);
-  int b7 = digitalRead(but7);
-  int b8 = digitalRead(but8);
-  
-  if( b1 == 1 ){
-     tone(buzzer,300,100);
-  }
-    if( b2 == 1 ){
-     tone(buzzer,400,100);
-  }
-    if( b3 == 1 ){
-     tone(buzzer,500,100);
-  }
-    if( b4 == 1 ){
-     tone(buzzer,600,100);
-  }
-    if( b5 == 1 ){
-     tone(buzzer,700,100);
-  }
-    if( b6 == 1 ){
-     tone(buzzer,800,100);
-  }
-    if( b7 == 1 ){
-     tone(buzzer,900,100);
-  }
-    if( b8 == 1 ){
-     tone(buzzer,1000,100);
-  }
-  
-//Aquí seteamos el delay que tendra la nota al hacer el contacto
-  delay(10);
-    
-}
-
-</code></pre>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Mj3svbpLUP0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
          
       </div>
     </div>
